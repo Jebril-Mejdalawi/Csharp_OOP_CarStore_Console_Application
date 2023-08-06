@@ -8,8 +8,22 @@ namespace OOP_carStore
 {
     internal class Program
     {
+        
+        //@Car Class
+        class Car {
+            private string name;
+            private double price;
+            public Car(string name, double price)
+            {
+                this.name = name;
+                this.price = price;
+            }
 
-        //CarStore Class
+            public string Name { set { name = value; } get { return name; } }
+            public double Price { set { price = value; } get { return price; } }
+        }
+
+        //@CarStore Class
         class CarStore
         {
             private string storeName, storeLocation, ownerName;
